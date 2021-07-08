@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+.Event{
+	width:100%;
+	text-align:center;
+	background:#252525;
+}
+
+.EventImg{
+	width:100%;
+	height:270px;
+	background: url(../image/banner/banner5.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.EventPage1{
+	width: 850px;
+	padding: 0;
+	margin: 0 auto;
+	text-align:center;
+}
+.EventPage2{
+	width: 850px;
+	margin: 0 auto;
+	text-align:center;
+	display: none;
+}
+.event1,.event2,.event3,.event4,.event5,.event6{
+	width: 100%;
+	height: 155px;
+	border:0;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: relative;
+	margin: 34px 0 0 0;
+	cursor:pointer;
+}
+.event1-1,.event2-2,.event3-3,.event4-4,.event5-5,.event6-6{
+	display:none;
+    width: 90%;
+    padding: 34px 0;
+    background-color: #1c1c1c;
+    margin: 0 auto;
+}
+.EventPage1 img{
+	width: 70%;
+	height: 70%;
+}
+.EventPage2 img{
+	width: 70%;
+	height: 70%;
+}
+.more{
+	width: 100%;
+    margin: 0 auto;
+    padding-bottom: 100px;
+}
+.more button{
+	border: 0;
+    margin: 34px auto;
+    width: 120px;
+    padding: 10px;
+    background: #912221;
+    color: #fff;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 550;
+    outline: none;
+    cursor: pointer;
+}

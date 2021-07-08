@@ -1,0 +1,141 @@
+@charset "UTF-8";
+
+.notice{
+	width:100%;
+	text-align:center;
+	background:#252525;
+}
+
+.noticeImg{
+	width:100%;
+	height: 270px;
+	background: url(../image/banner/banner5.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.notice form{
+	width: 800px;
+	margin: 0 auto;
+	border:0;
+}
+.notice form table{
+	width: 800px;
+	text-align: center;
+	vertical-align: middle;
+}
+.notice form table tr td select, option{
+	width: 100px;
+	height: 20px;
+	color:black;
+	border: 0;
+	outline:none;
+	margin: 10px;
+	font-size:11px;
+}
+.notice form table tr td input[type='text']{
+	width:500px;
+	height:20px;
+	color:black;
+	font-size:13px;
+	outline:none;
+	border:0;
+	margin: 10px;
+}
+
+#NoticeSection {
+	font-size: 20px;
+	color:white;
+	width: 800px;
+	margin: 50px auto;
+}
+
+#NoticeSection li{
+	padding: 20px 0 20px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    cursor:pointer;
+}
+#NoticeSection li #noticeTitle{
+	margin: auto 30px;
+	font-size: 15px;
+	font-weight: 700;
+	text-align: left;
+}
+#NoticeSection li #noticeTitle a{
+	text-align: left;
+	font-size: 15px;
+	font-weight: 700;
+}
+#NoticeSection li .date{
+	text-align: right;
+    font-size: 12px;
+    margin: auto 30px;
+}
+#NoticeSection li #noticeContent{
+	text-align: left;
+    font-size: 13px;
+    color: white;
+    margin: auto 30px;
+}
+#NoticeSection li:hover{
+	background-color: rgba(189,189,189,0.1);	
+}
+#NoticeSection .noticeBtn{
+	padding-top: 30px;
+	text-align: right;
+}
+
+#search{
+	margin: 0 auto;
+	padding: 20px 0;
+	border: 0;
+}
+#search input[type='text']{
+	width: 400px;
+    height: 25px;
+
+    color: black;
+    margin: 0px auto;
+    border: 0;
+}
+
+#search select, option{
+	color: black;
+    margin: 0;
+    border: 0;
+    height: 25px;
+    margin: 0 20px;
+    border: 0;
+}
+#search input[type='submit']{
+    height: 25px;
+}
+
+.listBtn{
+	width: 50%;
+    height: 30px;
+    padding-top: 30px;
+    padding-bottom: 100px;
+    margin: 0 auto;
+}
+.listBtn ul{
+	display: flex;
+	width: 350px;
+	height: 50px;
+	margin: 0 auto;
+}
+.listBtn ul li{
+	list-style-type: none;
+	width:30px;
+	height:30px;
+	margin: 10px;
+	color: white;
+	cursor:pointer;
+}
+.listBtn ul li:hover:not(:nth-child(1),:nth-child(7)){
+	border-bottom: 1px solid white;
+}
+.paging{
+	margin: 0 auto;
+	padding-bottom:100px;
+}

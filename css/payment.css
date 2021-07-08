@@ -1,0 +1,136 @@
+@CHARSET "UTF-8";
+
+#container {
+	margin: 0 auto;
+	width: 1200px;
+	padding: 50px;
+}
+
+/* 주문자 정보 */
+#orderUserInfo{
+	margin: 0 auto;
+	padding: 50px 0;
+}
+
+#orderUserInfo th{
+	width: 130px;
+	height: 70px;
+	padding: 10px;
+	background: #1c1c1c;
+	font-weight:600;
+	border-bottom:1px solid #868686;
+}
+#orderUserInfo td{
+	width: 1030px;
+	height: 70px;
+	padding: 10px;
+	border-bottom:1px solid #868686;
+}
+
+/* 배송지 정보 */
+#deliveryInfo{
+	margin: 0 auto;
+	padding: 50px 0;
+}
+#deliveryInfo th{
+	width: 130px;
+	height: 70px;
+	padding: 10px;
+	background: #1c1c1c;
+	font-weight:600;
+	border-bottom:1px solid #868686;
+}
+#deliveryInfo td{
+	width: 1030px;
+	height: 70px;
+	padding: 10px;
+	border-bottom:1px solid #868686;
+}
+#deliveryInfo input[type='text']{
+	background:transparent;
+	border:0;
+	width: 500px;
+	height:30px;
+}
+#deliveryInfo input[id='zipcode']{
+	width:50px;
+	height:30px;
+}
+#deliveryInfo input[type='button']{
+	width:100px;
+	height:30px;
+}
+#deliveryInfo textarea{
+	background:transparent;
+	border:0;
+}
+
+/* 결제 예정 금액 */
+#priceInfo{
+	width: 100%;
+	margin: 0 auto;
+	padding: 50px 0;
+}
+#priceInfo th{
+	width: 33%;
+	height: 70px;
+	padding: 10px;
+	background: #1c1c1c;
+	font-weight:600;
+	border-bottom:1px solid #868686;
+}
+#priceInfo td{
+	width: 33%;
+	height: 70px;
+	padding: 10px;
+	border-bottom:1px solid #868686;
+}
+
+/* 약관 동의 */
+#signInfo{
+	width: 100%;
+	margin: 0 auto;
+	padding: 50px 0;
+}
+#signInfo td{
+	width: 100%;
+	height: 70px;
+	padding: 10px;
+	font-weight:600;
+	border-bottom:1px solid #868686;
+}
+#signInfo textarea{
+	width: 100%;
+	background:transparent;
+	border:0;
+	color:#7d7b7c;
+}
+
+/* 신용카드 정보 */
+#creditInfo{
+	width: 100%;
+	margin: 0 auto;
+	padding-top: 50px;
+	padding-bottom: 100px;
+}
+#creditInfo th{
+	width: 130px;
+	height: 70px;
+	padding: 10px;
+	background: #1c1c1c;
+	font-weight:600;
+	border-bottom:1px solid #868686;
+}
+#creditInfo td{
+	width: 1030px;
+	height: 70px;
+	padding: 10px;
+	border-bottom:1px solid #868686;
+}
+#creditInfo #credit{
+	width: 250px;
+	text-align: center;
+	background:transparent;
+	border:0;
+	border-bottom: 1px solid white;
+}

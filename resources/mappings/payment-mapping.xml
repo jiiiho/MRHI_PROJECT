@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="PaymentDAO">
+	<resultMap id="paymentResult" type="payment">
+		<id property="seq" column="SEQ"/>
+		<id property="cart_no" column="CART_NO"/>
+		<id property="menu_no" column="MENU_NO"/>
+		<result property="user_id" column="USER_ID"/>
+		<result property="user_name" column="USER_NAME"/>
+		<result property="user_zipcode" column="USER_ZIPCODE"/>
+		<result property="user_faddr" column="USER_FADDR"/>
+		<result property="user_laddr" column="USER_LADDR"/>
+		<result property="user_tel" column="USER_TEL"/>
+		<result property="user_message" column="USER_MESSAGE"/>
+		<result property="chk_info" column="CHK_INFO"/>
+		<result property="credit" column="CREDIT"/>
+		<result property="totalPrice" column="TOTALPRICE"/>
+		<result property="payDate" column="PAYDATE"/>
+		<result property="quantity" column="QUANTITY"/>
+		<result property="name" column="NAME"/>
+		<result property="info" column="INFO"/>
+		<result property="price" column="PRICE"/>
+		<result property="imgname" column="IMGNAME"/>
+		<result property="type" column="TYPE"/>
+	</resultMap>
+	
+	<insert id="insertPayment" parameterType="payment">
+		<![CDATA[
+		INSERT INTO PAYMENT(SEQ, CART_NO, MENU_NO, USER_ID, USER_NAME, USER_ZIPCODE, USER_FADDR, USER_LADDR, USER_TEL, USER_MESSAGE, CHK_INFO, CREDIT, TOTALPRICE, QUANTITY)
+		VALUES (PAYMENT_SEQ.NEXTVAL, #{cart_no}, #{menu_no}, #{user_id}, #{user_name}, #{user_zipcode}, #{user_faddr}, #{user_laddr}, #{user_tel}, #{user_message}, #{chk_info}, #{credit}, #{totalPrice}, #{quantity})
+		]]>
+	</insert>
+	
+	<select id="getPaymentList" resultMap="paymentResult">
+		SELECT * 
+		FROM PAYMENT NATURAL JOIN MENU
+		ORDER BY SEQ DESC
+	</select>
+	
+	<delete id="deletePayment">
+		<![CDATA[
+		DELETE PAYMENT
+			WHERE SEQ = #{seq}
+		]]>
+	</delete>
+	
+</mapper>

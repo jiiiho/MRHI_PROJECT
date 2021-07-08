@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="UserDAO">
+	<resultMap id="userResult" type="user">
+		<id property="id" column="ID"/>
+		<result property="password" column="PASSWORD"/>
+		<result property="name" column="NAME"/>
+		<result property="gender" column="GENDER"/>
+		<result property="tel" column="TEL"/>
+		<result property="e_id" column="E_ID"/>
+		<result property="e_domain" column="E_DOMAIN"/>
+		<result property="zipcode" column="ZIPCODE"/>
+		<result property="faddr" column="FADDR"/>
+		<result property="laddr" column="LADDR"/>
+		<result property="regDate" column="REGDATE"/>
+	</resultMap>
+	
+	<select id="checkId" parameterType = "String" resultType="user">
+		<![CDATA[
+		SELECT *
+		FROM USERS
+		WHERE ID = #{id}
+		]]>
+	</select>
+	
+	<select id="forgotID" resultType="user">
+		SELECT * FROM USERS 
+		WHERE NAME = #{name} AND TEL = #{tel}
+	</select>
+	
+	<select id="forgotPW" resultType="user">
+		SELECT * FROM USERS 
+		WHERE ID = #{id} AND NAME = #{name} AND TEL = #{tel}
+	</select>
+	
+	<update id="updatePassword">
+		UPDATE USERS SET PASSWORD=#{password} where ID=#{id}
+	</update>
+	
+	<insert id="insertUser" parameterType="user">
+		<![CDATA[
+		INSERT INTO USERS(ID, PASSWORD, NAME, GENDER, TEL, E_ID, E_DOMAIN, ZIPCODE, FADDR, LADDR)
+		VALUES (#{id}, #{password}, #{name}, #{gender}, #{tel}, #{e_id}, #{e_domain}, #{zipcode}, #{faddr}, #{laddr})
+		]]>
+	</insert>
+	
+	<update id="updateUser">
+		<![CDATA[
+		UPDATE USERS SET
+			PASSWORD = #{password},
+			NAME = #{name},
+			TEL = #{tel},
+			E_ID = #{e_id},
+			E_DOMAIN = #{e_domain},
+			ZIPCODE = #{zipcode},
+			FADDR = #{faddr},
+			LADDR = #{laddr}
+			WHERE ID = #{id}
+		]]>
+	</update>
+	
+	<delete id="deleteUser">
+		<![CDATA[
+		DELETE USERS
+			WHERE ID = #{id}
+		]]>
+	</delete>
+	
+	<select id="login" resultType="user">
+		<![CDATA[
+		SELECT *
+		FROM USERS
+		WHERE ID = #{id} AND PASSWORD = #{password}
+		]]>
+	</select>
+</mapper>

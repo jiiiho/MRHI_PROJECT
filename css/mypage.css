@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+/* update user info */
+
+.myPageImg{
+	width: 100%;
+	height: 270px;
+	background: url(../image/banner/banner8.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+#userInfo{
+	width: 430px;
+	padding-bottom: 100px;
+	margin: 0 auto;
+}
+#userInfo form{
+	width: 430px;
+	margin: 0 auto;
+}
+#userInfo form table{
+	width: 430px;
+	vertical-align: middle;
+}
+#userInfo form table tr td{
+	padding: 10px;
+	height: 50px;
+	width: 410px;
+}
+#userInfo form table tr td input[type='text']{
+	width: 410px;
+	color: white;
+	background:transparent;
+	outline:none;
+	border:0;
+	padding:10px;
+	border-bottom: 1px solid white;
+	font-size:12px;
+}
+#userInfo form table tr td input[type='password']{
+	width: 410px;
+	color: white;
+	background:transparent;
+	outline:none;
+	border:0;
+	padding:10px;
+	border-bottom: 1px solid white;
+	font-size:12px;
+}
+#userInfo form table tr td input[type='submit']{
+	width:390px;
+	height: 45px;
+}
+#userInfo form table tr td input[id='zipcode']{
+	width: 100px;
+}
+#userInfo form table tr td input[name='e_id']{
+	width: 195px;
+}
+#userInfo form table tr td input[name='e_domain']{
+	width: 195px;
+}
+#userInfo form table tr td input[type='button']{
+	width:100px;
+	height: 30px;
+}

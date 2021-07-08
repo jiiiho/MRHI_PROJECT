@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+.loginPage{
+	width: 324px;
+    background: #252525;
+    padding-top:250px;
+    padding-bottom: 100px;
+    margin: 0 auto;
+}
+.loginPage form{
+	width: 324px;
+    margin: 0 auto;
+}
+.loginPage form table{
+	width: 324px;
+	vertical-align: middle;
+}
+.loginPage form table tr td{
+	padding: 10px;
+	width: 324px;
+	height: 50px;
+}
+.loginPage form table tr td input[type='text']{
+	width: 304px;
+	color: white;
+	background:transparent;
+	outline:none;
+	border: 0;
+	padding: 10px;
+	border-bottom: 1px solid white;
+	height: 20px;
+}
+.loginPage form table tr td input[type='password']{
+	width: 304px;
+	color: white;
+	background:transparent;
+	outline:none;
+	border: 0;
+	padding: 10px;
+	border-bottom: 1px solid white;
+	height: 20px;
+}
+.loginPage form table tr td input[type='submit']{
+	background: #912221;
+	border:0;
+	width:304px;
+	height: 45px;
+	color: white;
+	font-size: 15px;
+	font-weight: 650;
+	outline:none;
+	cursor:pointer;
+}

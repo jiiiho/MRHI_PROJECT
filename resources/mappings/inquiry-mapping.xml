@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="InquiryDAO">
+	<resultMap id="inquiryResult" type="inquiry">
+		<id property="seq" column="SEQ"/>
+		<result property="title" column="TITLE"/>
+		<result property="writer" column="WRITER"/>
+		<result property="tel" column="TEL"/>
+		<result property="email" column="EMAIL"/>
+		<result property="type" column="TYPE"/>
+		<result property="content" column="CONTENT"/>
+		<result property="regDate" column="REGDATE"/>
+	</resultMap>
+	
+	<insert id="insertInquiry" parameterType="inquiry">
+		<![CDATA[
+		INSERT INTO INQUIRY(SEQ, TITLE, WRITER, TEL, EMAIL, TYPE, CONTENT)
+		VALUES (INQUIRY_SEQ.NEXTVAL, #{title}, #{writer}, #{tel}, #{email}, #{type}, #{content})
+		]]>
+	</insert>
+	
+	<delete id="deleteInquiry">
+		<![CDATA[
+		DELETE INQUIRY
+			WHERE SEQ = #{seq}
+		]]>
+	</delete>
+	
+	<select id="getInquiry" resultType="inquiry">
+		<![CDATA[
+		SELECT *
+		FROM INQUIRY
+		WHERE SEQ = #{seq}
+		]]>
+	</select>
+	
+	<select id="getInquiryList" resultMap="inquiryResult">
+		SELECT * 
+		FROM INQUIRY
+		ORDER BY SEQ DESC
+	</select>
+</mapper>

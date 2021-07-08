@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+.SNS{
+	width:100%;
+	text-align:center;
+	background:#252525;
+}
+
+.SNSImg{
+	width:100%;
+	height: 270px;
+	background: url(../image/banner/banner7.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.btn{
+	width: 100%;
+	height: 46px;
+	text-align: center;
+	margin: 34px 0 auto;
+}
+.btn ul{
+	display: flex;
+    width: 450px;
+    height: 43px;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.btn ul li{
+	list-style-type: none;
+    width: 100%;
+    height: 100%;
+    border: 1px solid white;
+    margin: 0px 25px;
+    color: white;
+    cursor: pointer;
+}
+.btn ul li:hover{
+	background: #868686;
+	transition: 400ms ease all;
+}
+.btn ul li:active{
+	background: #868686;
+	transition: 400ms ease all;
+}
+.btn ul li p{
+	position: relative;
+    right: 50%;
+    top: 50%;
+    transform: translate(50%,-50%);
+    font-size: 12px;
+}
+
+.SnsSection{
+    width: 100%;
+    height: 500px;
+    padding: 40px 0;
+    margin: 0 auto;
+    text-align: center;
+}
+.SnsSection ul{
+	display:flex;
+	width: 960px;
+	height: 465px;
+	margin: 0 auto;
+}
+.SnsSection ul li{
+	list-style-type: none;
+	width: 300px;
+	height: 445px;
+	margin: 10px;
+}
+.SnsSection #img1,#img2,#img3{
+	border:0;
+	border-radius: 25px;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	transition: 400ms ease all;
+}

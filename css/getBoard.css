@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+.getBoardPage table{
+	width: 800px;
+	border: 0;
+	margin: 0 auto;
+	padding: 65px 0;
+}
+.getBoardPage table tr{
+	height: 50px;
+	padding: 0;
+}
+
+.getBoardPage table tr td{
+	width: 800px;
+	padding: 10px;
+}
+.getBoardPage table tr td input[type='text']{
+	width: 800px;
+	height: 15px;
+	color:white;
+	padding: 10px;
+	background:transparent;
+	border:0;
+	border-bottom: 1px solid white;
+}
+.getBoardPage table tr td textarea{
+	width: 800px;
+	height: 200px;
+	resize: none;
+	color:white;
+	padding:10px;
+	background:transparent;
+	border:0;
+	border-bottom: 1px solid white;
+}
+
+#getBoard_p{   
+    width: 800px;
+    margin: 0 auto;
+    color: white;
+}
+#getBoard_a{
+	font-size: 13px;
+	font-weight: 500;
+	cursor: pointer;
+}
+#gb_btn{
+	width: 360px;
+	height: 45px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#gb_btn a{
+	font-size: 15px;
+	font-weight: 600;
+}

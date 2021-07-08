@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
+
+*{
+   padding:0;
+   margin:0;
+   font-family: 'Nanum Myeongjo', serif;
+   color:white;
+   font-size:13px;
+}
+
+body{
+   background: #1c1c1c;
+}
+
+form{
+   width: 320px;
+    height: 260px;
+    margin: 19px auto;
+}
+form table{
+   width:320px;
+   vertical-align: middle;
+   border-spacing: 0;
+}
+form table tr td{
+   width: 280px;
+   padding:10px;
+}
+input[type='text']{
+   width: 280px;
+   border: 0;
+   border-bottom:1px solid white;
+   padding: 10px;
+   background:transparent;
+   color:white;
+   outline:none;
+}
+
+input[type='submit']{
+   background:#912221;
+   width: 120px;
+   height:25px;
+   font-weight:600;
+   margin: auto 10px;
+   color:white;
+   border: 0;
+   cursor:pointer;
+   outline:none;
+}
+input[type='button']{
+   background:#912221;
+   width: 120px;
+   height:25px;
+   font-weight:600;
+   margin: auto 10px ;
+   color:white;
+   border: 0;
+   cursor:pointer;
+   outline:none;
+}
+input[type='password']{
+   width: 280px;
+   border: 0;
+   border-bottom:1px solid white;
+   padding: 10px;
+   background:transparent;
+   color:white;
+   outline:none;
+}
+label{
+   font-size:13px;
+   padding: 10px;
+   font-weight: 600;
+}

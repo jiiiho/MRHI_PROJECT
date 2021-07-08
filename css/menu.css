@@ -1,0 +1,263 @@
+@charset "UTF-8";
+/* 전체 css 설정 */
+.menu{
+	width: 100%;
+	text-align: center;
+	background: #252525;
+}
+
+#menuPage2{
+	display: none;
+}
+.menuImg{
+	width: 100%;
+	height: 270px;
+	background: url(../image/banner/banner4.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+/*  특정식  */
+.special{
+	width:460px;
+	margin: 0 auto;
+	padding-top: 20px;
+	padding-bottom: 100px;
+}
+.special ul{
+	display: inline-table;
+    width: 100%;
+    height: 270px;
+    margin: 0 auto;
+}
+.special ul li{
+	width: 200px;
+    height: 200px;
+    margin: 15px;
+    cursor: pointer;
+    display: inherit;
+}
+.special ul li p{
+	font-size: 13px;
+	font-weight: 500;
+	width: 100%;
+	margin: 10px auto;
+}
+
+/* 정식메뉴 */
+.courseBtn{
+	width: 450px;
+	height: 50px;
+	margin: 0 auto;
+}
+.courseBtn ul{
+	display: flex;
+	width:100%;
+	height: 50px;
+	margin: 0 auto;
+}
+.courseBtn ul li{
+	width: 130px;
+	height: 30px;
+	margin: 10px;
+	cursor:pointer;
+	border-bottom: 1px solid white;
+}
+/* 스시정식 */
+.sushiCourse{
+	width:690px;
+	margin: 0 auto;
+	padding: 10px 0;
+}
+.sushiCourse ul{
+	display: inline-table;
+    width: 100%;
+    height: 270px;
+    margin: 0 auto;
+}
+.sushiCourse ul li{
+	width: 200px;
+	height: 200px;
+	margin: 15px;
+	cursor: pointer;
+	display: inherit;
+}
+.sushiCourse ul li p{
+	font-size: 13px;
+	font-weight: 500;
+	width: 100%;
+	margin: 10px auto;
+}
+
+/* 사시미정식 */
+.sasimiCourse{
+	width:690px;
+	margin: 0 auto;
+	padding: 10px 0;
+	display:none;
+}
+.sasimiCourse ul{
+	display: inline-table;
+    width: 100%;
+    height: 270px;
+    margin: 0 auto;
+}
+.sasimiCourse ul li{
+	width: 200px;
+	height: 200px;
+	margin: 15px;
+	cursor: pointer;
+	display: inherit;
+}
+.sasimiCourse ul li p{
+	font-size: 13px;
+	font-weight: 500;
+	width: 100%;
+	margin: 10px auto;
+}
+
+/* 테마스시 */
+.themeCourse{
+	width:690px;
+	margin: 0 auto;
+	padding: 10px 0;
+	display:none;
+}
+.themeCourse ul{
+	display: inline-table;
+    width: 100%;
+    height: 270px;
+    margin: 0 auto;
+}
+.themeCourse ul li{
+	width: 200px;
+	height: 200px;
+	margin: 15px;
+	cursor: pointer;
+	display: inherit;
+}
+.themeCourse ul li p{
+	font-size: 13px;
+	font-weight: 500;
+	width: 100%;
+	margin: 10px auto;
+}
+
+
+/* 페이지 전환 버튼 */
+#singlePageBtn, #coursePageBtn{
+	width: 285px;
+	height: 45px;
+	padding: 25px 0 100px 0;
+	margin: 0 auto;
+}
+
+
+/* 단품요리 */
+.single1Course{
+	width:690px;
+	margin: 0 auto;
+	padding: 10px 0;
+}
+.single1Course ul{
+	display: inline-table;
+    width: 100%;
+    height: 270px;
+    margin: 0 auto;
+}
+.single1Course ul li{
+	width: 200px;
+	height: 200px;
+	margin: 15px;
+	cursor: pointer;
+	display: inherit;
+}
+.single1Course ul li p{
+	font-size: 13px;
+	font-weight: 500;
+	width: 100%;
+	margin: 10px auto;
+}
+
+/* 스시단품 */
+.single2Course{
+	width:920px;
+	margin: 0 auto;
+	padding: 10px 0;
+	display:none;
+}
+.single2Course ul{
+	display: inline-table;
+    width: 100%;
+    height: 270px;
+    margin: 0 auto;
+}
+.single2Course ul li{
+	width: 200px;
+	height: 200px;
+	margin: 15px;
+	cursor: pointer;
+	display: inherit;
+}
+.single2Course ul li p{
+	font-size: 13px;
+	font-weight: 500;
+	width: 100%;
+	margin: 10px auto;
+}
+
+/* 튀김/구이/우동 */
+
+.friedCourse{
+	width:690px;
+	margin: 0 auto;
+	padding: 10px 0;
+	display: none;
+}
+.friedCourse ul{
+	display: inline-table;
+    width: 100%;
+    height: 270px;
+    margin: 0 auto;
+}
+.friedCourse ul li{
+	width: 200px;
+	height: 200px;
+	margin: 15px;
+	cursor: pointer;
+	display: inherit;
+}
+.friedCourse ul li p{
+	font-size: 13px;
+	font-weight: 500;
+	width: 100%;
+	margin: 10px auto;
+}
+
+/* 주류/음료 */
+.drinkCourse{
+	width:690px;
+	margin: 0 auto;
+	padding: 10px 0;
+	display:none;
+}
+.drinkCourse ul{
+	display: inline-table;
+    width: 100%;
+    height: 270px;
+    margin: 0 auto;
+}
+.drinkCourse ul li{
+	width: 200px;
+	height: 200px;
+	margin: 15px;
+	cursor: pointer;
+	display: inherit;
+}
+.drinkCourse ul li p{
+	font-size: 13px;
+	font-weight: 500;
+	width: 100%;
+	margin: 10px auto;
+}

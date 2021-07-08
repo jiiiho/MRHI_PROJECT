@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+.login-register-form{
+	width: 330px;
+    height: 30px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    float: right;
+    margin-left: 5%;
+    margin-right: 5%;
+    background: transparent;
+    color: white;
+    z-index: 100;
+}
+.login-register-form ul{
+	display:inline-table;
+	width: 330px;
+	height: 30px;
+	margin: 0 auto;
+	text-align: center;
+}
+.login-register-form ul li{
+	width: 100px;
+	height: 20px;
+	padding: 5px 5px;
+	text-align: center;
+	display: inherit;
+	margin: 0 auto;
+}
+.login-register-form ul li a{
+	text-decoration: none;
+	color: white;
+	font-size: 13px;
+	font-weight: 700;
+	cursor: pointer;
+	outline:none;
+}
+.login-register-form p{
+	color: white;
+    font-size: 13px;
+    font-weight: 700;
+    text-align: center;
+    width: 220px;
+    margin: 0 auto;
+}

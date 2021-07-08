@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+.registerPage{
+	width: 430px;
+    background: #252525;
+    padding-top:250px;
+    padding-bottom: 100px;
+    margin: 0 auto;
+}
+.registerPage form{
+	width: 430px;
+	margin: 0 auto;
+}
+.registerPage form table{
+	width: 430px;
+	vertical-align: middle;
+}
+.registerPage form table tr td{
+	padding: 10px;
+	width: 410px;
+	height: 50px;
+}
+.registerPage form table tr td input[type='text']{
+	width: 410px;
+	color: white;
+	background:transparent;
+	outline:none;
+	border:0;
+	padding: 10px;
+	border-bottom: 1px solid white;
+}
+.registerPage form table tr td input[type='password']{
+	width: 410px;
+	color: white;
+	background:transparent;
+	outline:none;
+	border:0;
+	padding: 10px;
+	border-bottom: 1px solid white;
+}
+.registerPage form table tr td input[type='submit']{
+	width:390px;
+	height: 50px;
+}
+.registerPage form table tr td input[id='id']{
+	width:285px;
+}
+.registerPage form table tr td input[id='zipcode']{
+	width: 100px;
+}
+.registerPage form table tr td input[name='e_id']{
+	width: 195px;
+}
+.registerPage form table tr td input[name='e_domain']{
+	width: 195px;
+}
+.registerPage form table tr td input[type='button']{
+	width:100px;
+	height: 30px;
+}
+.registerPage form table tr td #gender{
+	width: 100%;
+    height: 100%;
+	border-bottom:1px solid white;
+}

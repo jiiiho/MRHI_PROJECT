@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+.insertPage table{
+	width: 800px;
+	border: 0;
+	margin: 0 auto;
+	padding: 65px 0;
+}
+.insertPage table tr{
+	height: 50px;
+	padding: 0;
+}
+.insertPage table tr td{
+	width: 800px;
+	padding: 10px;
+	font-size:15px;
+}
+.insertPage table tr td input[type='text']{
+	width: 800px;
+	height: 15px;
+	color:white;
+	padding: 10px;
+	background: transparent;
+	border:0;
+	border-bottom: 1px solid white;
+}
+.insertPage table tr td textarea{
+	width: 800px;
+	height: 200px;
+	resize: none;
+	background:transparent;
+	color:white;
+	border:0;
+	padding: 10px;
+	border-bottom: 1px solid white;
+}

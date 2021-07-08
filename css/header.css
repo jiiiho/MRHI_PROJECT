@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+header{
+	width:200px;
+	height:100px;
+	position: absolute;
+	top: 30px;
+	left:5%;
+}
+.header-wrap{
+	width: 100%;
+	height: 100px;
+	position: absolute;
+	top: 0;
+	background:transparent;
+}
+.header-wrap .logoImg{
+	width:150px;
+	height: 70px;
+	background: transparent;
+	padding: 15px 25px;
+	float: left;
+	position: absolute;
+}
+.header-wrap .logoImg a img{
+	width: 150px;
+	height: 70px;
+	border: 0px;
+	outline: none;
+	cursor: pointer;
+}

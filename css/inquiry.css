@@ -1,0 +1,128 @@
+@charset "UTF-8";
+
+.inquiryPage{
+	width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+.InquiryImg{
+	width:100%;
+	height: 270px;
+	background: url(../image/banner/banner5.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.inquiryPage form{
+	width:800px;
+	margin:0 auto;
+	padding-top: 50px;
+    padding-bottom: 100px;
+}
+.inquiryPage form #text1{
+	width: 90%;
+    border: 1px solid #7d7b7c;
+    margin: 10px;
+    padding: 25px;
+    text-align: left;
+}
+.inquiryPage form  #text1 p{
+	font-size: 12px;
+	color:#7d7b7c;
+}
+
+.inquiryPage form .userInquiry{
+	width: 90%;
+    text-align: center;
+   	padding-top: 50px;
+   	margin: auto;
+}
+.inquiryPage form .userInquiry th{
+	font-size: 13px;
+	padding: 15px;
+	font-weight: 650;
+	background-color:#1c1c1c;
+	width: 25%;
+}
+.inquiryPage form .userInquiry td{
+	font-size:12px;
+	padding: 15px;
+	font-weight: 300;
+	width: 75%;
+}
+.inquiryPage form .userInquiry td select,option{
+	color:black;
+	border:0;
+}
+.inquiryPage form .userInquiry td input[type='text']{
+	width: 100%;
+	height: 15px;
+	font-size:13px;
+	font-weight: 500;
+	outline:none;
+	border:0;
+	background:transparent;
+}
+.inquiryPage form .userInquiry td input[type='email']{
+	width: 100%;
+	height: 15px;
+	font-size:13px;
+	font-weight: 500;
+	outline:none;
+	border:0;
+	background:transparent;
+}
+.inquiryPage form .userInquiry td textarea{
+	width: 100%;
+	height: 250px;
+	outline:none;
+	resize: none;
+	border: 0;
+	background: transparent;
+}
+.inquiryPage form .userInquiry td.line{
+	padding: 0;
+}
+.inquiryPage form .userInquiry td.line hr{
+	margin: 0 auto;
+	border-block-color: #7d7b7c;
+}
+
+/* admin inquiry part start */
+.inquiryPage .adminInquiry{
+	width: 800px;
+	padding-top: 50px;
+	padding-bottom: 100px;
+	margin: 0 auto;
+}
+.inquiryPage .adminInquiry tr #inquiryDelete{
+	width: 50px;
+	font-size: 13px;
+	font-weight: 600;
+	height:50px;
+}
+.inquiryPage .adminInquiry tr #inquiryType{
+	width: 50px;
+	font-size: 13px;
+	font-weight: 600;
+	height:50px;
+}
+.inquiryPage .adminInquiry tr #inquiryTitle{
+	width: 600px;
+	font-size: 13px;
+	font-weight: 600;
+	height:50px;
+}
+.inquiryPage .adminInquiry tr #inquiryRegdate{
+	width:100px;
+	font-size: 13px;
+	font-weight: 600;
+	height:50px;
+}
+.inquiryPage .adminInquiry tr td{
+	height: 50px;
+}
+.inquiryPage .adminInquiry tr #inquiryContent{
+	border-bottom: 1px solid #868686;
+}

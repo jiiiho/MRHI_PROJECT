@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="CartDAO">
+	<resultMap id="cartResult" type="cart">
+		<id property="cart_no" column="CART_NO"/>
+		<result property="menu_no" column="MENU_NO"/>
+		<result property="name" column="NAME"/>
+		<result property="imgname" column="IMGNAME"/>
+		<result property="info" column="INFO"/>
+		<result property="price" column="PRICE"/>
+		<result property="regDate" column="REGDATE"/>
+		<result property="id" column="ID"/>
+		<result property="quantity" column="QUANTITY"/>
+	</resultMap>
+	
+	<insert id="insertCart" parameterType="cart">
+		<![CDATA[
+		INSERT INTO CART(CART_NO, MENU_NO, NAME, IMGNAME, INFO, PRICE, ID, QUANTITY)
+		VALUES (CART_SEQ.NEXTVAL, TO_NUMBER(#{menu_no}), #{name}, #{imgname}, #{info}, To_Number(#{price}), #{id}, To_Number(#{quantity}))
+		]]>
+	</insert>
+	 
+	<delete id="deleteCart">
+		<![CDATA[
+		DELETE CART
+		WHERE CART_NO = #{cart_no}
+		]]>
+	</delete>
+	
+	<delete id="deleteAll">
+		<![CDATA[
+		DELETE CART
+		WHERE ID = #{id}
+		]]>
+	</delete>
+	
+	<update id="updateCart">
+		<![CDATA[
+		UPDATE CART SET
+			QUANTITY = #{quantity}
+			WHERE CART_NO = #{cart_no}
+		]]>
+	</update>
+	
+	<select id="getCart" resultType="cart">
+		<![CDATA[
+		SELECT *
+		FROM CART
+		WHERE ID = #{id}
+		]]>
+	</select>
+	
+	<select id="getCartList" resultMap="cartResult">
+		SELECT * 
+		FROM CART
+		ORDER BY CART_NO DESC
+	</select>
+</mapper>
